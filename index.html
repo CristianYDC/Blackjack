@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- -------------------------------- Fonts -------------------------------- -->
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+		<!-- Estilos Css -->
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/styles.css" />
+	</head>
+	<body>
+		<div class="game">
+			<h2 class="game__title">Blackjack</h2>
+			<div class="buttons" id="butttons">
+				<button class="button new-game">Nuevo Juego</button>
+				<button class="button ask-card">Pedir Carta</button>
+				<button class="button stop-card">Detener</button>
+			</div>
+			<div class="game__cards" id="cardsJugador">
+				<!-- <img class="game__card" src="./assets/cards/10S.png" alt="" /> -->
+			</div>
+			<h3 class="game__player-title">Jugador: <span class="game__player-score" id="puntosJugador">0</span></h3>
+			<div class="game__cards" id="cardsIa">
+				<!-- <img class="game__card" src="./assets/cards/2S.png" alt="" /> -->
+			</div>
+			<h3 class="game__player-title">IA: <span class="game__player-score" id="puntosIa">0</span></h3>
+		</div>
+		<script src="./js/underscore-min.js"></script>
+		<script src="./js/effects.js"></script>
+		<script src="./js/app.js"></script>
+	</body>
+</html>

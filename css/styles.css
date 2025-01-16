@@ -1,0 +1,99 @@
+:root {
+	--font-primary: "Playfair Display", serif;
+	--font-size: 15px;
+}
+
+html {
+	font-family: var(--font-primary);
+}
+
+body {
+	background-image: url(../assets/img/green-textile.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.game {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+	align-items: center;
+}
+
+.game__title {
+	width: 100%;
+	text-align: center;
+	font-size: 3rem;
+	color: #fff;
+	letter-spacing: 0.3rem;
+	padding: 0 0.6rem;
+	background-color: #000000;
+}
+
+.game__player-title,
+.game__player-score {
+	font-size: 1.4rem;
+	color: #fff;
+	font-weight: 200;
+	letter-spacing: 1.5px;
+}
+
+.game__cards {
+	display: flex;
+	justify-content: center;
+	padding: 1rem;
+}
+.game__card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+	background-color: #fff;
+	border-radius: 10px;
+
+	transition: transform 0.1s ease, box-shadow 0.1s ease;
+	transform-style: preserve-3d;
+	cursor: pointer;
+}
+
+.game__card:hover {
+	box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+	transform: scale(1.05);
+}
+
+.buttons {
+	padding-top: 1.4rem;
+	font-family: var(--font-primary);
+}
+
+.button {
+	padding: 0.3rem 0.5rem;
+	border-radius: 0.3rem;
+	border: none;
+	margin: 0 0.2rem;
+	cursor: pointer;
+	color: #fff;
+	transition: transform 0.2s ease-in-out;
+}
+
+.button:hover {
+	transform: scale(1.1);
+}
+
+.new-game {
+	background-color: #000000;
+}
+
+.ask-card {
+	background-color: #006eff;
+}
+
+.stop-card {
+	background-color: #fc2d2d;
+}
+
+.game__cards {
+	height: 250px;
+}
